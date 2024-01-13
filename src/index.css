@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply bg-darkBg box-border text-white;
+}
+.profileButton {
+  @apply flex gap-2 py-4 px-6 rounded-full bg-uiPurple justify-center items-center text-2xl font-semibold hover:bg-white hover:text-black stroke-white hover:stroke-black;
+}
+.profileInput {
+  @apply bg-darkBg text-white focus:outline-none focus:ring-uiPurple px-3 py-4 rounded-lg ring-2 ring-transparent;
+}
+.modalInput {
+  @apply px-3 text-sm py-2 font-medium bg-transparent focus:outline-none focus:ring-uiPurple text-white rounded ring-1 ring-darkGray;
+}
