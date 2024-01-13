@@ -25,7 +25,7 @@ const SideBar = () => {
   const dispatch = useAppDispatch()
   const { isSidebar } = useAppSelector((state) => state.windows)
   const { boards } = useAppSelector((state) => state.boards)
-  const sidebar = useRef(null)
+  const sidebar = useRef<HTMLDivElement>(null)
   useEffect(() => {
     const w = sidebar.current?.getBoundingClientRect().width
     if (w && isSidebar) {
